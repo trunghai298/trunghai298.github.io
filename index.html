@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trung Hai - Full Stack Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">Trung<span class="accent">Hai</span></span>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="hero-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="hero-greeting">Hello</p>
+                <h1 class="hero-title">I'm <span class="accent">Trung Hai</span></h1>
+                <p class="hero-subtitle">A full stack developer based in Ha Noi, passionate about building exceptional digital experiences</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+                <div class="hero-social">
+                    <a href="https://github.com/trunghai298" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/nguy%E1%BB%85n-trung-h%E1%BA%A3i-196190199/" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:haint180298@gmail.com" class="social-link">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-container">
+                    <div class="code-animation">
+                        <div class="code-line">
+                            <span class="code-keyword">const</span> developer = {
+                        </div>
+                        <div class="code-line">
+                            <span class="code-property">name</span>: <span class="code-string">'Trung Hai'</span>,
+                        </div>
+                        <div class="code-line">
+                            <span class="code-property">skills</span>: [<span class="code-string">'TypeScript'</span>, <span class="code-string">'React'</span>, <span class="code-string">'Node.js'</span>],
+                        </div>
+                        <div class="code-line">
+                            <span class="code-property">passion</span>: <span class="code-string">'Building amazing products'</span>
+                        </div>
+                        <div class="code-line">}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About <span class="accent">Me</span></h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a passionate full stack developer with expertise in modern web technologies. I love creating clean, efficient code and building products that make a difference.</p>
+                    <p>With experience in both frontend and backend development, I specialize in TypeScript, React, Node.js, and cloud technologies. I follow best practices, implement TDD, and always strive for clean, maintainable code.</p>
+                    <div class="about-info">
+                        <div class="info-item">
+                            <i class="fas fa-code"></i>
+                            <div>
+                                <h4>Full Stack Development</h4>
+                                <p>Building end-to-end solutions</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <div>
+                                <h4>Security First</h4>
+                                <p>Following best security practices</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-rocket"></i>
+                            <div>
+                                <h4>Performance Focused</h4>
+                                <p>Optimizing for speed and efficiency</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <h3>5+</h3>
+                        <p>Years Experience</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>50+</h3>
+                        <p>Projects Completed</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>100%</h3>
+                        <p>Client Satisfaction</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured <span class="accent">Projects</span></h2>
+            
+            <div class="project-tabs">
+                <button class="tab-btn active" data-tab="personal">Personal Projects</button>
+                <button class="tab-btn" data-tab="company">Company Work</button>
+            </div>
+
+            <div class="projects-grid" id="personal-projects">
+                <div class="project-card songsymmetry-card">
+                    <div class="project-image" style="background: #111827;">
+                        <div class="project-logo-container">
+                            <i class="fas fa-music" style="font-size: 4rem; color: #6b7280;"></i>
+                            <h2 style="color: #f3f4f6; margin-top: 1rem; font-size: 2rem; font-weight: 300;">SongSymmetry</h2>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://songsymmetry.fly.dev" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="https://github.com/trunghai298/songsymmetry" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>SongSymmetry</h3>
+                        <p>AI-powered music discovery platform that analyzes song patterns and recommends similar tracks based on musical symmetry and structure analysis.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Fly.io</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card moneyflow-card">
+                    <div class="project-image" style="background: linear-gradient(135deg, #1e1b4b 0%, #7c3aed 100%); position: relative; overflow: hidden;">
+                        <div class="gradient-circle" style="position: absolute; width: 300px; height: 300px; background: radial-gradient(circle, rgba(124, 58, 237, 0.3) 0%, transparent 70%); border-radius: 50%; top: -100px; right: -50px;"></div>
+                        <div class="project-logo-container">
+                            <i class="fas fa-chart-line" style="font-size: 4rem; color: #c4b5fd;"></i>
+                            <h2 style="color: #f3f4f6; margin-top: 1rem; font-size: 2rem; font-weight: 700;">Money Flow</h2>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://money-flow-app.fly.dev" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="https://github.com/trunghai298/moneyflow" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>MoneyFlow</h3>
+                        <p>Personal finance management application with expense tracking, budget planning, and financial insights. Features real-time data visualization and smart categorization.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">Next.js</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">Fly.io</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image" style="background: linear-gradient(135deg, #1a1a1a 0%, #ff6b35 100%);">
+                        <div class="project-logo-container">
+                            <i class="fas fa-robot" style="font-size: 4rem; color: #fbbf24;"></i>
+                            <h2 style="color: #f3f4f6; margin-top: 1rem; font-size: 2rem; font-weight: 600;">AI Assistant</h2>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>AI Chat Assistant</h3>
+                        <p>Intelligent chatbot powered by OpenAI API with natural language processing, context awareness, and multi-language support.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">FastAPI</span>
+                            <span class="tech-tag">OpenAI</span>
+                            <span class="tech-tag">Redis</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projects-grid hidden" id="company-projects">
+                <div class="project-card">
+                    <div class="project-image" style="background: linear-gradient(135deg, #059669 0%, #10b981 100%);">
+                        <div class="project-logo-container">
+                            <i class="fas fa-hand-holding-usd" style="font-size: 4rem; color: #d1fae5;"></i>
+                            <h2 style="color: #f3f4f6; margin-top: 1rem; font-size: 2rem; font-weight: 700;">Fundpop</h2>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://apps.shopify.com/fundpop-crowdfunding" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>FundpopCrowdfunding</h3>
+                        <p>Shopify app enabling merchants to run crowdfunding campaigns directly on their stores. Features campaign management, backer rewards, and automated fulfillment integration.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Shopify API</span>
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">GraphQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image" style="background: linear-gradient(135deg, #3730a3 0%, #6366f1 100%);">
+                        <div class="project-logo-container">
+                            <i class="fas fa-chart-bar" style="font-size: 4rem; color: #c7d2fe;"></i>
+                            <h2 style="color: #f3f4f6; margin-top: 1rem; font-size: 1.8rem; font-weight: 600;">Analytics Dashboard</h2>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Real-time Analytics Dashboard</h3>
+                        <p>Built a comprehensive analytics dashboard processing millions of events daily. Implemented real-time data visualization and custom reporting.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">D3.js</span>
+                            <span class="tech-tag">Kafka</span>
+                            <span class="tech-tag">Elasticsearch</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image" style="background: linear-gradient(135deg, #0891b2 0%, #06b6d4 100%);">
+                        <div class="project-logo-container">
+                            <i class="fas fa-mobile-alt" style="font-size: 4rem; color: #cffafe;"></i>
+                            <h2 style="color: #f3f4f6; margin-top: 1rem; font-size: 1.8rem; font-weight: 600;">Mobile Banking</h2>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Mobile Banking Application</h3>
+                        <p>Developed secure mobile banking app with biometric authentication, real-time transactions, and advanced security features.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React Native</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Security</span>
+                            <span class="tech-tag">Blockchain</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">My <span class="accent">Skills</span></h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3><i class="fas fa-laptop-code"></i> Frontend</h3>
+                    <div class="skill-icons">
+                        <div class="skill-icon-item">
+                            <i class="fab fa-html5"></i>
+                            <span>HTML5</span>
+                        </div>
+                        <div class="skill-icon-item">
+                            <i class="fab fa-css3-alt"></i>
+                            <span>CSS3</span>
+                        </div>
+                        <div class="skill-icon-item">
+                            <i class="fab fa-js"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-icon-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript">
+                            <span>TypeScript</span>
+                        </div>
+                        <div class="skill-icon-item">
+                            <i class="fab fa-react"></i>
+                            <span>React</span>
+                        </div>
+                        <div class="skill-icon-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="Next.js">
+                            <span>Next.js</span>
+                        </div>
+                        <div class="skill-icon-item">
+                            <i class="fab fa-vuejs"></i>
+                            <span>Vue.js</span>
+                        </div>
+                        <div class="skill-icon-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS">
+                            <span>Tailwind CSS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-server"></i> Backend</h3>
+                    <div class="skill-icons">
+                        <div class="skill-icon-item">
+                            <i class="fab fa-node-js"></i>
+                            <span>Node.js</span>
+                        </div>
+                        <div class="skill-icon-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express">
+                            <span>Express</span>
+                        </div>
+                        <div class="skill-icon-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg" alt="GraphQL">
+                            <span>GraphQL</span>
+                        </div>
+                        <div class="skill-icon-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nestjs/nestjs-original.svg" alt="NestJS">
+                            <span>NestJS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-database"></i> Database & Cloud</h3>
+                    <div class="skill-icons">
+                        <div class="skill-icon-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL">
+                            <span>PostgreSQL</span>
+                        </div>
+                        <div class="skill-icon-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
+                            <span>MySQL</span>
+                        </div>
+                        <div class="skill-icon-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB">
+                            <span>MongoDB</span>
+                        </div>
+                        <div class="skill-icon-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" alt="Redis">
+                            <span>Redis</span>
+                        </div>
+                        <div class="skill-icon-item">
+                            <i class="fab fa-aws"></i>
+                            <span>AWS</span>
+                        </div>
+                        <div class="skill-icon-item">
+                            <i class="fab fa-docker"></i>
+                            <span>Docker</span>
+                        </div>
+                        <div class="skill-icon-item">
+                            <img src="https://fly.io/static/images/brand/logo-landscape.svg" alt="Fly.io">
+                            <span>Fly.io</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools"></i> Tools & Others</h3>
+                    <div class="skill-icons">
+                        <div class="skill-icon-item">
+                            <i class="fab fa-git-alt"></i>
+                            <span>Git</span>
+                        </div>
+                        <div class="skill-icon-item">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </div>
+                        <div class="skill-icon-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg" alt="Jest">
+                            <span>Jest</span>
+                        </div>
+                        <div class="skill-icon-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code">
+                            <span>VS Code</span>
+                        </div>
+                        <div class="skill-icon-item">
+                            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/shopify.svg" alt="Shopify" style="filter: brightness(0) saturate(100%) invert(58%) sepia(89%) saturate(433%) hue-rotate(73deg) brightness(95%) contrast(92%);">
+                            <span>Shopify</span>
+                        </div>
+                        <div class="skill-icon-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg" alt="Jira">
+                            <span>Jira</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In <span class="accent">Touch</span></h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's work together</h3>
+                    <p>I'm always interested in new opportunities and exciting projects. Feel free to reach out if you'd like to collaborate or just have a chat!</p>
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>haint180298@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+84 986685643</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Ha Noi, Viet Nam</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Trung Hai. All rights reserved.</p>
+                <div class="footer-social">
+                    <a href="https://github.com/trunghai298" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/nguy%E1%BB%85n-trung-h%E1%BA%A3i-196190199/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://twitter.com/trunghai" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
